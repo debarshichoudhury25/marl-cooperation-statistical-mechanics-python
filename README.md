@@ -26,7 +26,7 @@ additional penalty of strength `p`, representing an external
 enforcement/arbiter mechanism (echoing the Arbiter role in the
 Ising-DM three-player framework from the thesis work above). Agents
 use softmax (Boltzmann) exploration over Q-values with an annealed
-temperature `tau` — a deliberate nod to the statistical-mechanics
+temperature `tau` which a deliberate nod to the statistical-mechanics
 origin of this exploration scheme.
 
 ## Key result
@@ -36,7 +36,7 @@ dilemma range reveals a clear **threshold transition**: below a
 critical `p`, agents converge to full defection (individually
 rational); above it, they converge to full cooperation. This is a
 direct computational analogue of the punishment thresholds studied in
-the Ising-DM cooperation/defection framework — now realized as an
+the Ising-DM cooperation/defection framework which is now realized as an
 emergent property of learning dynamics rather than imposed by a
 Hamiltonian.
 
