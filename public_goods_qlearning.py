@@ -61,11 +61,6 @@ class PublicGoodsGame:
         self.p = punishment_strength  # exogenous penalty for defecting
 
     def step(self, actions: np.ndarray) -> np.ndarray:
-        """
-        Returns payoffs for actions (shape (n,), values in {0,1}).
-        Defectors incur an extra penalty `self.p` (exogenous
-        enforcement, not peer-to-peer costly punishment).
-        """
         total_contribution = self.c * actions.sum()
         share = (self.r * total_contribution) / self.n
         payoffs = self.endowment - self.c * actions + share
