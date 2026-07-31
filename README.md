@@ -23,7 +23,7 @@ collectively optimal, but free-riding is individually dominant.
 
 An exogenous **punishment mechanism** is added: defectors incur an
 additional penalty of strength `p`, representing an external
-enforcement/arbiter mechanism (echoing the Arbiter role in the
+enforcement/arbiter mechanism (analogous to the Arbiter role in the
 Ising-DM three-player framework from the thesis work above). Agents
 use softmax (Boltzmann) exploration over Q-values with an annealed
 temperature `tau` which a deliberate nod to the statistical-mechanics
@@ -34,11 +34,8 @@ origin of this exploration scheme.
 Sweeping the punishment strength `p` at a fixed synergy factor in the
 dilemma range reveals a clear **threshold transition**: below a
 critical `p`, agents converge to full defection (individually
-rational); above it, they converge to full cooperation. This is a
-direct computational analogue of the punishment thresholds studied in
-the Ising-DM cooperation/defection framework which is now realized as an
-emergent property of learning dynamics rather than imposed by a
-Hamiltonian.
+rational); above it, they converge to full cooperation. This is an attempt to create a computational analogue of the punishment thresholds studied in
+the Ising-DM cooperation/defection framework. 
 
 ![Punishment phase diagram](punishment_phase_diagram.png)
 
