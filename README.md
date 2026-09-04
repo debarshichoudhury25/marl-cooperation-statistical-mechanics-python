@@ -55,7 +55,7 @@ Two supporting plots are also included:
 
 - `public_goods_qlearning.py` — full simulation, sweep, and plotting code.
 - `public_goods_qlearning_stateful.ipynb` — state-dependent extension (see above).
-- `training_curve.png`, `phase_diagram.png`, `punishment_phase_diagram.png`
+- `training_curve.png`, `phase_diagram.png`, `punishment_phase_diagram.png`, `training_curve_stateful.png`, `punishment_phase_diagram_stateful.png`
   — output figures.
 
 ## Status / next steps
