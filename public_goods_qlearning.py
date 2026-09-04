@@ -48,7 +48,7 @@ class PublicGoodsGame:
     payoff_i = endowment - c*a_i + (r*c*sum(a))/N
 
     For 1 < r < N: mutual cooperation is Pareto-optimal, but defection
-    is individually dominant -- a genuine social dilemma.
+    is individually dominant which is a genuine social dilemma.
     """
 
     def __init__(self, n_agents: int, synergy_factor: float,
@@ -137,7 +137,7 @@ def sweep_synergy_factor(n_agents: int, r_values: np.ndarray, n_rounds: int,
                           punishment_strength: float = 0.0) -> np.ndarray:
     """
     Mean converged cooperation rate (final 10% of rounds, averaged
-    over seeds) as a function of synergy factor r -- an order
+    over seeds) as a function of synergy factor r which is an order
     parameter curve.
     """
     tail = max(1, n_rounds // 10)
@@ -161,7 +161,7 @@ def sweep_punishment_strength(n_agents: int, synergy_factor: float,
                                alpha: float = 0.1) -> np.ndarray:
     """
     Fixes synergy factor r (dilemma range) and sweeps punishment
-    strength p. Returns converged cooperation rate vs. p -- may show
+    strength p. Returns converged cooperation rate vs. p which may show
     a phase-like shift from mostly defection to mostly cooperation.
     """
     tail = max(1, n_rounds // 10)
