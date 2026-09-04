@@ -41,9 +41,9 @@ the Ising-DM cooperation/defection framework.
 
 Two supporting plots are also included:
 - `training_curve.png`: cooperation rate over training rounds for a
-  single run (no punishment) — shows convergence to full defection.
+  single run (no punishment), potentially shows convergence to full defection.
 - `phase_diagram.png`: converged cooperation rate as a function of the
-  synergy factor `r` (no punishment) — confirms that synergy alone,
+  synergy factor `r` (no punishment), which in a way reinforces that synergy alone,
   without enforcement, does not produce cooperation in this dilemma
   range.
 
