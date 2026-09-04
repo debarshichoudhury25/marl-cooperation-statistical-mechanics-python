@@ -54,6 +54,7 @@ Two supporting plots are also included:
 ## Files
 
 - `public_goods_qlearning.py` — full simulation, sweep, and plotting code.
+- `public_goods_qlearning_stateful.ipynb` — state-dependent extension (see above).
 - `training_curve.png`, `phase_diagram.png`, `punishment_phase_diagram.png`
   — output figures.
 
@@ -63,9 +64,9 @@ This is a first, deliberately minimal step. Planned extensions (as part
 of ongoing self-study in reinforcement learning and multi-agent
 reinforcement learning):
 
-- Replace the single-state stateless bandit setup with a proper
+- ~~Replace the single-state stateless bandit setup with a proper
   repeated-game state (e.g. conditioning on the previous round's
-  aggregate cooperation level).
+  aggregate cooperation level).~~ Done — see `public_goods_qlearning_stateful.ipynb`.
 - Move from independent Q-learning to BRG-style (Best Response Guided)
   training dynamics, and study prethermalization in the resulting
   training trajectories.
