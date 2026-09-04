@@ -47,6 +47,10 @@ Two supporting plots are also included:
   without enforcement, does not produce cooperation in this dilemma
   range.
 
+## State-dependent extension
+
+- `public_goods_qlearning_stateful.ipynb` extends the base model so agents condition their action on a discretized version of the previous round's aggregate cooperation rate, rather than acting as stateless bandits. This is a first step toward genuine repeated-game dynamics (see Status below).
+
 ## Files
 
 - `public_goods_qlearning.py` — full simulation, sweep, and plotting code.
